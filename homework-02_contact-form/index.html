@@ -1,26 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Contact Us</title>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
 
-        <style type="text/css">
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
 
-        </style>
-    </head>
-    <body class="content">
-        <h1>Contact Us</h1>
-        <p>Got a question? We'd love to hear from you. Send us a messageand we'll respond as soon as possible.</p>
-        
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: "Open Sans Light";
+            src: url(typefaces/OpenSans-Light.ttf);
+        }
+
+        @font-face {
+            font-family: "Open Sans Semibold";
+            src: url(typefaces/OpenSans-SemiBold.ttf);
+        }
+
+        body {
+            height: 140vh;
+            background: linear-gradient(#472F82, #408FA2);
+            background-repeat: no-repeat;
+        }
+
+        form {
+            padding: 22px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 27px;
+            font-size: 28px;
+            border: 2px solid #C9D7DF;
+            border-radius: 5px;
+        }
+
+        textarea[type="text"] {
+            height: 240px;
+            min-height: 33px;
+            padding: 27px;
+            resize: vertical;
+            font-size: 28px;
+            border: 2px solid #C9D7DF;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin: 38px 0px;
+            padding: 27px;
+            color: white;
+            text-transform: capitalize;
+            font-size: 28px;
+            background: linear-gradient(#038BCF, #0386CD);
+            border: 2px solid #006CA6;
+            border-radius: 5px;
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2)
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(#0386CD, #038BCF);
+            box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+
+        .content {
+            width: 956px;
+            margin: 20px auto;
+            padding: 0px 20px;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
+
+        .txt {
+            color: white;
+        }
+
+        .title {
+            padding: 30px 0px 55px 0px;
+            text-align: center;
+            font-family: "Open Sans Light";
+            font-size: 128px;
+            font-weight: 100;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: "Open Sans Light";
+            font-size: 32px;
+        }
+
+        .lbl {
+            padding: 40px 0px 8px 0px;
+            font-family: "Open Sans Semibold";
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="txt title">Contact Us</h1>
+        <p class="txt subtitle">Got a question? We'd love to hear from you. Send us a message and we'll respond as soon
+            as possible.</p>
+
         <form>
-            <label for="name">Name *</label><br>
-            <input type="text" id="input-name"></input><br>
-            <label for="email">Email address *</label><br>
-            <input type="email" id="input-email"></input><br>
-            <label for="text">Message</label><br>
-            <input type="text" id="input-msg"></input><br>
-            <input type="submit" value="submit">
+            <label for="name" class="txt lbl">Name *</label>
+            <input type="text" name="name"></input>
+
+            <label for="email" class="txt lbl">Email address *</label>
+            <input type="email" name="email"></input>
+
+            <label for="text" class="txt lbl">Message</label>
+            <textarea type="text" name="msg"></textarea>
+
+            <input type="submit" value="send message">
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
