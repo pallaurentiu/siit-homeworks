@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Layout</title>
+    <style>
+        .grid-structure {
+            width: 900px;
+            box-sizing: border-box;
+            display:grid;
+            grid-template-areas:
+            "headrow headrow"
+            "mid1 mid2"
+            "mid3 mid4"
+            "mid5 mid6"
+            "mid7 mid8"
+            "mid9 mid9"
+            "btm btm";
+            grid-gap: 10px;
+            grid-template-columns: auto auto;
+        }
+
+        .head-content {
+            grid-area: headrow;
+            grid-column: span 2;
+            background-color: gray;
+        }
+
+        .mid-content1 {
+            grid-area: mid1;
+            background-color: aqua;
+        }
+
+        .mid-content2 {
+            grid-area: mid2;
+            background-color: blueviolet;
+        }
+
+        .mid-content3 {
+            grid-area: mid3;
+            background-color: blue;
+        }
+
+        .mid-content4 {
+            grid-area: mid4;
+            background-color: chocolate;
+        }
+
+        .mid-content5 {
+            grid-area: mid5;
+            background-color: coral;
+        }
+
+        .mid-content6 {
+            grid-area: mid6;
+            background-color: darkmagenta;
+        }
+
+        .mid-content7 {
+            grid-area: mid7;
+            background-color: darkgrey;
+        }
+
+        .mid-content8 {
+            grid-area: mid8;
+            background-color: darkgreen;
+        }
+
+        .mid-content9 {
+            grid-area: mid9;
+            grid-column: span 2;
+            background-color: crimson;
+        }
+
+        .foot-content {
+            grid-area: btm;
+            grid-column: span 2;
+            background-color: darkkhaki;
+        }
+
+        /* GENERAL SETTINGS APPLICABLE TO ALL CELLS IN GRID */
+        .common-config {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-structure">
+        <div class="head-content common-config">Header</div>
+        <div class="mid-content1 common-config">Middle1</div>
+        <div class="mid-content2 common-config">Middle2</div>
+        <div class="mid-content3 common-config">Middle3</div>
+        <div class="mid-content4 common-config">Middle4</div>
+        <div class="mid-content5 common-config">Middle5</div>
+        <div class="mid-content6 common-config">Middle6</div>
+        <div class="mid-content7 common-config">Middle7</div>
+        <div class="mid-content8 common-config">Middle8</div>
+        <div class="mid-content9 common-config">Middle9</div>
+        <div class="foot-content common-config">Footer</div>
+    </div>
+
+</body>
+
+</html>
