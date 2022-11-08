@@ -5,101 +5,400 @@
     <meta charset="utf-8">
     <title>Page Layout</title>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @font-face {
+            font-family: "OpenSans";
+            src: url(typeface/OpenSans.ttf);
+        }
+
+        @font-face {
+            font-family: "OpenSans SemiCondensed";
+            src: url(typeface/OpenSans-SemiCondensed.ttf);
+        }
+
+        @font-face {
+            font-family: "Gelica";
+            src: url(typeface/Gelica-SemiBold.otf);
+        }
+
+        /* GRID SETTINGS  */
         .grid-structure {
             width: 900px;
-            box-sizing: border-box;
-            display:grid;
+            display: grid;
             grid-template-areas:
-            "headrow headrow"
-            "mid1 mid2"
-            "mid3 mid4"
-            "mid5 mid6"
-            "mid7 mid8"
-            "mid9 mid9"
-            "btm btm";
-            grid-gap: 10px;
-            grid-template-columns: auto auto;
+                "headrow headrow"
+                "bodyrow1 bodyrow2"
+                "bodyrow3 bodyrow4"
+                "bodyrow5 bodyrow6"
+                "bodyrow7 bodyrow7"
+                "bodyrow8 bodyrow8"
+                "footrow footrow";
+            grid-template-columns: 450px 450px;
+            grid-template-rows: 500px 375px 375px 375px 485px 280px 220px;
+            margin: auto;
         }
 
         .head-content {
             grid-area: headrow;
             grid-column: span 2;
-            background-color: gray;
+            background-image: url(images/orange-half.jpg);
+            background-repeat: no-repeat;
+            background-size: 1200px;
+            background-position-y: 27%;
+            background-position-x: center;
+            box-sizing: border-box;
+            padding: 50px;
         }
 
         .mid-content1 {
-            grid-area: mid1;
-            background-color: aqua;
+            grid-area: bodyrow1;
+            padding: 90px 70px 90px 100px;
+            box-sizing: border-box;
+            background-color: #FFFBF8;
         }
 
         .mid-content2 {
-            grid-area: mid2;
-            background-color: blueviolet;
+            grid-area: bodyrow2;
+            background-image: url(images/egg.jpg);
+            background-size: 860px;
+            background-position-y: 75%;
         }
 
         .mid-content3 {
-            grid-area: mid3;
-            background-color: blue;
+            grid-area: bodyrow3;
+            background-image: url(images/glass.jpg);
+            background-size: 490px;
+            background-position-y: 55%;
+            background-position-x: center;
         }
 
         .mid-content4 {
-            grid-area: mid4;
-            background-color: chocolate;
+            grid-area: bodyrow4;
+            margin: 90px 100px 90px 70px;
+            box-sizing: border-box;
+            background-color: #FFFBF8;
         }
 
         .mid-content5 {
-            grid-area: mid5;
-            background-color: coral;
+            grid-area: bodyrow5;
+            padding: 230px 105px 20px 105px;
+            background-image: url(images/cherries.jpg);
+            background-size: 580px;
+            background-position-y: 98%;
+            background-position-x: 54%;
         }
 
         .mid-content6 {
-            grid-area: mid6;
-            background-color: darkmagenta;
+            grid-area: bodyrow6;
+            padding: 230px 105px 20px 105px;
+            background-image: url(images/orange.jpg);
+            background-size: 670px;
+            background-position-y: 88%;
+            background-position-x: center;
         }
 
         .mid-content7 {
-            grid-area: mid7;
-            background-color: darkgrey;
+            grid-area: bodyrow7;
+            grid-column: span 2;
+            padding: 100px;
+            background-color: #FFFBF8;
         }
 
         .mid-content8 {
-            grid-area: mid8;
-            background-color: darkgreen;
-        }
-
-        .mid-content9 {
-            grid-area: mid9;
+            grid-area: bodyrow8;
             grid-column: span 2;
-            background-color: crimson;
+            display: flex;
         }
 
         .foot-content {
-            grid-area: btm;
+            grid-area: footrow;
             grid-column: span 2;
-            background-color: darkkhaki;
-        }
-
-        /* GENERAL SETTINGS APPLICABLE TO ALL CELLS IN GRID */
-        .common-config {
+            padding: 50px;
+            background-color: #90D4C5;
+            display: flex;
+            flex-direction: column;
             text-align: center;
         }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-nav li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 30px;
+            font-size: 15px;
+            font-family: "OpenSans SemiCondensed";
+            color: #FFF;
+        }
+
+        .bottom-nav li {
+            margin: 30px 0px;
+            list-style-type: none;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            font-family: "OpenSans";
+            color: #4E7A6E;
+        }
+
+        .social-media li {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .title-big {
+            margin-top: 85px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Gelica";
+            font-size: 40px;
+            letter-spacing: 7px;
+            color: #FFF;
+        }
+
+        .title-small {
+            padding: 0px 10px 30px 0px;
+            font-family: "Gelica";
+            font-size: 26px;
+            color: #2B353F;
+        }
+
+        .title-smaller-green {
+            padding: 0px 0px 20px 0px;
+            font-family: "Gelica";
+            font-size: 20px;
+            color: #1F594D;
+            text-align: center;
+        }
+
+        .title-smaller-blue {
+            padding: 0px 0px 20px 0px;
+            font-family: "Gelica";
+            font-size: 20px;
+            color: #1E5677;
+            text-align: center;
+        }
+
+        .title-tiny {
+            font-family: "Gelica";
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #A4A4A4;
+        }
+
+        .paragraph-gray {
+            font-family: "OpenSans SemiCondensed";
+            font-size: 12px;
+            font-weight: 600;
+            color: #A4A4A4;
+            padding: 0px 0px 30px 0px;
+            line-height: 20px;
+        }
+
+        .paragraph-green {
+            font-family: "OpenSans SemiCondensed";
+            font-size: 12px;
+            font-weight: 600;
+            color: #427F70;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .paragraph-blue {
+            font-family: "OpenSans SemiCondensed";
+            font-size: 12px;
+            font-weight: 600;
+            color: #2E77A1;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .button-learnmore {
+            font-family: "Gelica";
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #2B353F;
+        }
+
+        .arrow {
+            height: 70px;
+            display: block;
+            margin: 70px auto;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: center;
+        }
+
+        .testimonial-card {
+            text-align: center;
+            margin: 50px 0px;
+            padding: 10px;
+        }
+
+        .profile-img {
+            margin-bottom: 40px;
+            border-radius: 50%;
+            width: 50px;
+        }
+
+        .testimonial-client-name {
+            font-family: "Gelica";
+            font-size: 12px;
+            color: #2B353F;
+        }
+
+        .testimonial-client-occupation {
+            font-family: "OpenSans";
+            font-size: 10px;
+            color: #c0c0c0;
+        }
+
+        .img1 {
+            background-image: url(images/milk.jpg);
+            background-size: 540px;
+            background-position-y: 50%;
+            background-position-x: center;
+            width: 225px;
+        }
+
+        .img2 {
+            background-image: url(images/orange-plate.jpg);
+            background-size: 330px;
+            background-position-y: 98%;
+            background-position-x: 4%;
+            width: 225px;
+        }
+
+        .img3 {
+            background-image: url(images/cone.jpg);
+            background-size: 290px;
+            background-position-y: 20%;
+            background-position-x: center;
+            width: 225px;
+        }
+
+        .img4 {
+            background-image: url(images/sugar.jpg);
+            background-size: 375px;
+            background-position-y: 62%;
+            background-position-x: 100%;
+            width: 225px;
+        }
     </style>
 </head>
 
 <body>
     <div class="grid-structure">
-        <div class="head-content common-config">Header</div>
-        <div class="mid-content1 common-config">Middle1</div>
-        <div class="mid-content2 common-config">Middle2</div>
-        <div class="mid-content3 common-config">Middle3</div>
-        <div class="mid-content4 common-config">Middle4</div>
-        <div class="mid-content5 common-config">Middle5</div>
-        <div class="mid-content6 common-config">Middle6</div>
-        <div class="mid-content7 common-config">Middle7</div>
-        <div class="mid-content8 common-config">Middle8</div>
-        <div class="mid-content9 common-config">Middle9</div>
-        <div class="foot-content common-config">Footer</div>
+        <div class="head-content cellsize-head">
+            <div class="navbar">
+                <img src="images/sunnyside_logo.svg" height="22px">
+                <nav>
+                    <ul class="top-nav">
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="title-big">We are creatives</h1>
+            <img src="images/arrow-down.svg" class="arrow">
+        </div>
+
+        <div class="mid-content1">
+            <h2 class="title-small">Transform your brand</h2>
+            <p class="paragraph-gray">We are a full-service creative agency specializing in helping brands grow fast.
+                Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <p class="button-learnmore">Learn more</p>
+        </div>
+
+        <div class="mid-content2"></div>
+        <div class="mid-content3"></div>
+
+        <div class="mid-content4">
+            <h2 class="title-small">Stand out to the right audience</h2>
+            <p class="paragraph-gray">Using a collaborative formula of designers, researchers, photographers,
+                videographers, and copywriters,
+                we'll build and extend your brand in digital places.</p>
+            <p class="button-learnmore">Learn more</p>
+        </div>
+
+        <div class="mid-content5">
+            <h2 class="title-smaller-green">Graphic Design</h2>
+            <p class="paragraph-green">Great design makes you memorable. We deliver artwork that underscores your brand
+                message and captures potential clients' attention.</p>
+        </div>
+
+        <div class="mid-content6">
+            <h2 class="title-smaller-blue">Photography</h2>
+            <p class="paragraph-blue">Increase your credibility by getting the most stunning, high-quality photos that
+                improve your business image.</p>
+        </div>
+
+        <div class="mid-content7">
+            <h2 class="title-tiny">Client testimonials</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <img src="images/emily.jpg" class="profile-img">
+                    <p class="paragraph-gray">We put our trust in Sunnyside and they delivered, making sure our needs
+                        were met and deadlines were always hit.</p>
+                    <p class="testimonial-client-name">Emily R.</p>
+                    <span class="testimonial-client-occupation">Marketing Director</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="images/thomas.jpg" class="profile-img">
+                    <p class="paragraph-gray">Sunnyside's enthusiasm coupled with their keen interest in our brand's
+                        success made it a satisfying and enjoyable experience.</p>
+                    <p class="testimonial-client-name">Thomas S.</p>
+                    <span class="testimonial-client-occupation">Cheif Operating Officer</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="images/jennie.jpg" class="profile-img">
+                    <p class="paragraph-gray">Incredible end result! Our sales increased over 400% when we worked with
+                        Sunnyside. Highly recommended!</p>
+                    <p class="testimonial-client-name">Jennie F.</p>
+                    <span class="testimonial-client-occupation">Business Owner</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-content8">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+        </div>
+
+        <div class="foot-content">
+            <img src="images/sunnyside_logo_green.svg" height="22px">
+            <ul class="bottom-nav">
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+            </ul>
+
+            <ul class="social-media">
+                <li><img src="images/facebook.svg" height="22px"></li>
+                <li><img src="images/instagram.svg" height="22px"></li>
+                <li><img src="images/twitter.svg" height="22px"></li>
+                <li><img src="images/pinterest.svg" height="22px"></li>
+            </ul>
+        </div>
     </div>
 
 </body>
