@@ -26,7 +26,11 @@
             src: url(typeface/Gelica-SemiBold.otf);
         }
 
-        /* GRID SETTINGS  */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
         .grid-structure {
             width: 900px;
             display: grid;
@@ -38,7 +42,7 @@
                 "bodyrow7 bodyrow7"
                 "bodyrow8 bodyrow8"
                 "footrow footrow";
-            grid-template-columns: 450px 450px;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 500px 375px 375px 375px 485px 280px 220px;
             margin: auto;
         }
@@ -131,7 +135,7 @@
             align-items: center;
         }
 
-        .top-nav li {
+        .menu-head li {
             list-style-type: none;
             display: inline-block;
             margin-left: 30px;
@@ -140,8 +144,8 @@
             color: #FFF;
         }
 
-        .bottom-nav li {
-            margin: 30px 0px;
+        .menu-foot li {
+            margin: 30px 15px;
             list-style-type: none;
             display: inline-block;
             font-size: 12px;
@@ -153,6 +157,11 @@
         .social-media li {
             list-style-type: none;
             display: inline-block;
+            margin: 0px 10px;
+        }
+
+        .social-media-icon {
+            height: 20px;
         }
 
         .title-big {
@@ -249,7 +258,7 @@
             padding: 10px;
         }
 
-        .profile-img {
+        .avatar {
             margin-bottom: 40px;
             border-radius: 50%;
             width: 50px;
@@ -303,15 +312,15 @@
 
 <body>
     <div class="grid-structure">
-        <div class="head-content cellsize-head">
+        <div class="head-content">
             <div class="navbar">
-                <img src="images/sunnyside_logo.svg" height="22px">
+                <a href="#"><img src="images/sunnyside_logo.svg" height="22px"></a>
                 <nav>
-                    <ul class="top-nav">
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                    <ul class="menu-head">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -353,7 +362,7 @@
             <h2 class="title-tiny">Client testimonials</h2>
             <div class="testimonials">
                 <div class="testimonial-card">
-                    <img src="images/emily.jpg" class="profile-img">
+                    <img src="images/emily.jpg" class="avatar">
                     <p class="paragraph-gray">We put our trust in Sunnyside and they delivered, making sure our needs
                         were met and deadlines were always hit.</p>
                     <p class="testimonial-client-name">Emily R.</p>
@@ -361,7 +370,7 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="images/thomas.jpg" class="profile-img">
+                    <img src="images/thomas.jpg" class="avatar">
                     <p class="paragraph-gray">Sunnyside's enthusiasm coupled with their keen interest in our brand's
                         success made it a satisfying and enjoyable experience.</p>
                     <p class="testimonial-client-name">Thomas S.</p>
@@ -369,7 +378,7 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <img src="images/jennie.jpg" class="profile-img">
+                    <img src="images/jennie.jpg" class="avatar">
                     <p class="paragraph-gray">Incredible end result! Our sales increased over 400% when we worked with
                         Sunnyside. Highly recommended!</p>
                     <p class="testimonial-client-name">Jennie F.</p>
@@ -386,18 +395,18 @@
         </div>
 
         <div class="foot-content">
-            <img src="images/sunnyside_logo_green.svg" height="22px">
-            <ul class="bottom-nav">
-                <li>About</li>
-                <li>Services</li>
-                <li>Projects</li>
+            <a href="#"><img src="images/sunnyside_logo_green.svg" height="22px"></a>
+            <ul class="menu-foot">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
             </ul>
 
             <ul class="social-media">
-                <li><img src="images/facebook.svg" height="22px"></li>
-                <li><img src="images/instagram.svg" height="22px"></li>
-                <li><img src="images/twitter.svg" height="22px"></li>
-                <li><img src="images/pinterest.svg" height="22px"></li>
+                <li><a href="#"><img src="images/facebook.svg" class="social-media-icon"></a></li>
+                <li><a href="#"><img src="images/instagram.svg" class="social-media-icon"></a></li>
+                <li><a href="#"><img src="images/twitter.svg" class="social-media-icon"></a></li>
+                <li><a href="#"><img src="images/pinterest.svg" class="social-media-icon"></a></li>
             </ul>
         </div>
     </div>
