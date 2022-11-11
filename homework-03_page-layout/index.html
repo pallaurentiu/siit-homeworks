@@ -39,14 +39,6 @@
             background-color: #FFF69F;
         }
 
-        mark:hover {
-            display: inline-block;
-            line-height: 0;
-            padding: 8px 6px 6px 6px;
-            border-radius: 8px;
-            background-color: #FFF69F;
-        }
-
         .grid-structure {
             width: 900px;
             display: grid;
@@ -154,10 +146,17 @@
         .menu-head li {
             list-style-type: none;
             display: inline-block;
-            margin-left: 30px;
+            /* margin-left: 30px; */
+            padding: 10px 20px;
             font-size: 15px;
             font-family: "OpenSans SemiCondensed";
             color: #FFF;
+        }
+
+        .menu-head li:hover {
+            background-color: #ffffff;
+            color: #2e7396;
+            border-radius: 20px;
         }
 
         .menu-foot li {
@@ -270,8 +269,14 @@
 
         .testimonial-card {
             text-align: center;
-            margin: 50px 0px;
-            padding: 10px;
+            margin: 20px 0px;
+            padding: 30px 10px;
+            user-select: none;
+        }
+
+        .testimonial-card:hover {
+            background-color:#f1ede9;
+            border-radius: 20px;
         }
 
         .avatar {
