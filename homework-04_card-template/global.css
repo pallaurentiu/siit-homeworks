@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* COLORS */
+.main-color {
+    background-color: #1b1938;
+    color: #ffffff;
+}
+
+.accent-color {
+    color: #aa5cdb;
+}
+
+.neutral-color {
+    color: #ffffffbf;
+}
+
+/* TYPEFACES */
+.title-type {
+    font-family: "Inter", sans-serif;
+}
+
+.content-type {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.special-type {
+    font-family: "Lexend Deca", sans-serif;
+}
