@@ -4,6 +4,10 @@
 }
 
 /* COLORS */
+.bg-color {
+    background-color: #090b1a;
+}
+
 .main-color {
     background-color: #1b1938;
     color: #ffffff;
@@ -23,7 +27,7 @@
 }
 
 .content-type {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .special-type {

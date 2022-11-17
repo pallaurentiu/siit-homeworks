@@ -1,0 +1,36 @@
+/* Mobile */
+@media only screen and (max-width: 414px) {
+    .info {
+        padding: 50px 30px;
+        box-sizing: border-box;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 738px) {
+    .card-template {
+        margin: 20px 20px;
+        flex-direction: column-reverse;
+    }
+
+    h3.content-type {
+        padding-top: 20px;
+        font-size: 26px;
+    }
+
+    .image,
+    .overlay {
+        min-height: 300px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-type,
+    .content-type,
+    .special-type {
+        text-align: center;
+    }
+}
