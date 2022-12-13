@@ -2,18 +2,22 @@ body {
     background-image: url(../images/background-pattern.svg);
 }
 
-h1 {
-    margin: 30px auto;
-    text-align: center;
-}
-
 h2 {
     margin: -20px;
     padding: 16px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.fade-overlay {
-    background: linear-gradient(to bottom, rgba(22, 24, 27, 0), rgba(22, 24, 27, 1));
+p {
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.logo {
+    display: block;
+    height: 120px;
+    margin: 30px auto;
 }
 
 .game-cards {
@@ -28,7 +32,7 @@ h2 {
     height: 280px;
     width: 360px;
     box-sizing: border-box;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 10px;
 }
 
 .game-options {
@@ -40,4 +44,13 @@ h2 {
     margin: 5px;
     height: 60px;
     width: 100px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.button-option:hover {
+    color: #212529;
+    background-color: #ffd166;
+    cursor: pointer;
 }
