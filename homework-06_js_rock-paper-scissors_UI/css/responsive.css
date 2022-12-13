@@ -1,0 +1,23 @@
+/* MOBILE */
+@media only screen and (max-width: 414px) {
+    .logo {
+        max-height: 80px;
+        margin: 20px auto;
+    }
+
+    .game-cards {
+        flex-direction: column;
+    }
+
+    .game-cards > * {
+        margin: 10px;
+    }
+
+    .game-options {
+        flex-wrap: wrap;
+    }
+
+    .game-options > * {
+        flex: 1 1 25%;
+    }
+}

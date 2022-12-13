@@ -29,16 +29,18 @@ p.credits {
 }
 
 .game-cards {
+    margin: auto 10px;
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
 .card {
-    height: 280px;
-    width: 360px;
+    max-width: 420px;
     margin: 20px 10px;
     padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -49,6 +51,7 @@ p.credits {
 }
 
 .game-options {
+    margin: auto 10px;
     display: flex;
     justify-content: center;
 }
