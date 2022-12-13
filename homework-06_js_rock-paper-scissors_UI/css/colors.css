@@ -14,6 +14,14 @@
     background-color: #212529;
 }
 
+.color-bg-main-light {
+    background-color: #272c31;
+}
+
+.color-bg-main-dark {
+    background-color: #16181b;
+}
+
 .color-bg-accent {
     background-color: #ffd166;
 }
