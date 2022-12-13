@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Pally";
+    src: url(../typeface/Pally-Regular.otf);
+}
+
+@font-face {
+    font-family: "Pally Bold";
+    src: url(../typeface/Pally-Bold.otf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../typeface/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(../typeface/Montserrat-Bold.ttf);
+}
+
+.font-primary {
+    font-family: "Pally";
+}
+
+.font-primary-bold {
+    font-family: "Pally Bold";
+}
+
+.font-secondary {
+    font-family: "Montserrat";
+}
+
+.font-secondary-bold {
+    font-family: "Montserrat";
+}

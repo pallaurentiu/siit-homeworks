@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS GAME</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/typeface.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/rps-game.js"></script>
+</head>
+
+<body>
+    <h1 class="font-primary">ROCK - PAPER - SCISSORS</h1>
+
+    <div class="game-cards">
+        <div class="card color-bg-main" id="user-card">
+            <h2 class="color-accent font-primary">USER</h2>
+            <div class="preview-image"></div>
+            <h5 class="color-neutral font-secondary">Total wins: </h5>
+        </div>
+
+        <div class="card color-bg-main" id="computer-card">
+            <h2 class="color-accent font-primary">COMPUTER</h2>
+            <div class="preview-image"></div>
+            <h5 class="color-neutral font-secondary">Total wins: </h5>
+        </div>
+    </div>
+
+    <div class="game-options">
+        <button class="button" id="button-rock">ROCK</button>
+        <button class="button" id="button-paper">PAPER</button>
+        <button class="button" id="button-scissors">SCISSORS</button>
+        <button class="button" id="play-button">PLAY</button>
+    </div>
+</body>
+
+</html>
