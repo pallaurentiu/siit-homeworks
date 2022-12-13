@@ -9,8 +9,16 @@ h2 {
 }
 
 p {
-    margin: 40px 0px 20px 0px;
     text-align: center;
+}
+
+p.prize {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+p.credits {
+    margin-bottom: 20px;
     font-size: 12px;
 }
 
