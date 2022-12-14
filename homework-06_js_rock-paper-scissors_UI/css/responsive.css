@@ -1,8 +1,8 @@
 /* MOBILE */
 @media only screen and (max-width: 414px) {
     .logo {
-        max-height: 80px;
-        margin: 20px auto;
+        max-height: 90px;
+        margin: 20px auto 10px auto;
     }
 
     .game-cards {
@@ -19,5 +19,10 @@
 
     .game-options > * {
         flex: 1 1 25%;
+        height: 50px;
+    }
+
+    #play-button {
+        font-size: 28px;
     }
 }

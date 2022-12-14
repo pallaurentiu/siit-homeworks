@@ -47,11 +47,11 @@ p.credits {
 
 .preview-img {
     height: 140px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .game-options {
-    margin: auto 10px;
+    margin: auto 15px;
     display: flex;
     justify-content: center;
 }
