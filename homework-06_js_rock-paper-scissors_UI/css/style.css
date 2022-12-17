@@ -12,7 +12,7 @@ p {
     text-align: center;
 }
 
-p.prize {
+p.winner {
     margin-top: 30px;
     font-size: 22px;
 }
@@ -24,7 +24,7 @@ p.credits {
 
 .logo {
     display: block;
-    height: 120px;
+    height: 160px;
     margin: 30px auto;
 }
 
@@ -45,9 +45,13 @@ p.credits {
     border-radius: 10px;
 }
 
-.preview-img {
+.user-hand, .computer-hand {
     height: 140px;
     margin-top: 30px;
+}
+
+.computer-hand {
+    transform: rotateY(180deg);
 }
 
 .game-options {
@@ -56,7 +60,7 @@ p.credits {
     justify-content: center;
 }
 
-.button-option {
+.button-option, .button-choice {
     margin: 5px;
     height: 60px;
     width: 100px;
@@ -69,4 +73,9 @@ p.credits {
     color: #212529;
     background-color: #ffd166;
     cursor: pointer;
+}
+
+::selection {
+    color: #212529;
+    background: #ffd166;
 }

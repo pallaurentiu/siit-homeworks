@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <script src="js/rps-game.js"></script>
+    <!-- <script src="js/rps-game.js"></script> -->
 </head>
 
 <body class="color-bg-main-dark">
@@ -22,26 +22,28 @@
     <div class="game-cards">
         <div class="card color-bg-main" id="user-card">
             <h2 class="color-accent font-primary color-bg-main-light">USER</h2>
-            <h5 class="color-neutral font-secondary">Total wins: </h5>
-            <img class="preview-img" id="preview-img-user" src="images/question-mark.svg" alt="Question Mark">
+            <h5 class="color-neutral font-secondary">Total wins: <span class="user-score">0</span></h5>
+            <img class="user-hand" src="images/rock.svg" alt="Question Mark">
         </div>
 
         <div class="card color-bg-main" id="computer-card">
             <h2 class="color-accent font-primary color-bg-main-light">COMPUTER</h2>
-            <h5 class="color-neutral font-secondary">Total wins: </h5>
-            <img class="preview-img" id="preview-img-computer" src="images/question-mark.svg" alt="Question Mark">
+            <h5 class="color-neutral font-secondary">Total wins: <span class="computer-score">0</span></h5>
+            <img class="computer-hand" src="images/rock.svg" alt="Question Mark">
         </div>
     </div>
 
     <div class="game-options">
-        <button class="button-option color-bg-main-light color-neutral font-primary-bold" id="button-rock">ROCK</button>
-        <button class="button-option color-bg-main-light color-neutral font-primary-bold" id="button-paper">PAPER</button>
-        <button class="button-option color-bg-main-light color-neutral font-primary-bold" id="button-scissors">SCISSORS</button>
+        <button class="button-choice color-bg-main-light color-neutral font-primary-bold" id="button-rock">ROCK</button>
+        <button class="button-choice color-bg-main-light color-neutral font-primary-bold" id="button-paper">PAPER</button>
+        <button class="button-choice color-bg-main-light color-neutral font-primary-bold" id="button-scissors">SCISSORS</button>
         <button class="button-option color-bg-main-light color-neutral font-primary-bold" id="play-button">PLAY</button>
     </div>
 
-    <p class="prize color-neutral font-secondary">Winner gets a <span class="color-accent font-primary-bold">cookie</span>!</p>
+    <p class="winner color-neutral font-secondary">Winner gets a <span class="color-accent font-primary-bold">cookie</span>!</p>
     <p class="credits color-neutral font-secondary-bold">© 2022 LAURENTIU PAL</p>
+
+    <script src="js/rpsScript.js"></script>
 </body>
 
 </html>

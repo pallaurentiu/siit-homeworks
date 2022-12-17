@@ -6,15 +6,15 @@ function getChoise(gameOptions) {
 }
 
 function play() {
-    var userChoise = getChoise(gameOptions);
+    const userChoise = getChoise(gameOptions);
     console.log("User's choise: " + userChoise);
 
-    var computerChoise = getChoise(gameOptions);
+    const computerChoise = getChoise(gameOptions);
     console.log("Computer's choise: " + computerChoise);
 
-    var noWin = "It's a tie!";
-    var userWin = "User wins!";
-    var computerWin = "Computer wins!";
+    const noWin = "It's a tie!";
+    const userWin = "User wins!";
+    const computerWin = "Computer wins!";
 
     const computerWinCondition = userChoise == gameOptions[0] && computerChoise == gameOptions[1] ||
         userChoise == gameOptions[1] && computerChoise == gameOptions[2] ||
