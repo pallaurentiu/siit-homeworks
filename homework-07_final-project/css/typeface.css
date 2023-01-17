@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Inter";
+    src: url(/homework-07_final-project/typeface/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/homework-07_final-project/typeface/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(/homework-07_final-project/typeface/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url(/homework-07_final-project/typeface/PlusJakartaSans-Regular.otf);
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans Bold";
+    src: url(/homework-07_final-project/typeface/PlusJakartaSans-ExtraBold.otf);
+}
