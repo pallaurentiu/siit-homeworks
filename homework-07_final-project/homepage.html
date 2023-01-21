@@ -6,83 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Online CV</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/typeface.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <!-- add NAVIGATION with js -->
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img src="images/logos/logo-laurentiu-pal.svg" alt="Logo Laur" height="50px">
 
-    <section class="header">
+        <ul class="menu">
+            <li><a href="#" class="font-primary-bold">home</a></li>
+            <li><a href="#" class="font-primary-bold">portfolio</a></li>
+            <li><a href="#" class="font-primary-bold">contact</a></li>
+            <li><img src="images/icons/icon-moon.svg" alt="Dark Mode" class="darkmode"></li>
+        </ul>
+
+        <div class="burger-menu"></div>
+    </nav>
+
+
+    <!-- HEADER -->
+    <section class="header width-limit-second">
         <div>
-            <h1><span>Hi there,</span><br>
+            <h1 class="font-special-bold"><span class="font-special">Hi there,</span><br>
                 I'm Laurentiu, web and graphic designer</h1>
             <button>DOWNLOAD CV</button>
         </div>
 
-        <div>
-            <img src="images/profile-laur.png" alt="Laur" height="643px">
-        </div>
+        <img src="images/profile-laur.png" alt="Laur" class="photo">
     </section>
 
+    <!-- MAIN -->
     <main>
         <section class="skills">
-            <h2>Skills</h2>
-            <div class="skill-gd">
-                <img src="images/illustrations/graphic-design.svg" alt="Graphic Design" height="289px">
-                <h3>Graphic Design</h3>
-                <p>Rich experience in creating logo designs for small to medium businesses. Moderate knowledge and
-                    experience in developing visual identities.</p>
-            </div>
+            <h2 class="font-primary-bold">Skills</h2>
 
-            <div class="skill-wd">
-                <img src="images/illustrations/web-design.svg" alt="Web Design" height="289px">
-                <h3>Web Design</h3>
-                <p>Good understanding of UI/UX principles for web and mobile applications. Good foundation of front-end
-                    technologies that are currently used in the industry.</p>
-            </div>
+            <div class="cards width-limit">
+                <div class="card">
+                    <div class="card-illu illu-gd"></div>
+                    <h3 class="font-primary-bold">Graphic Design</h3>
+                    <p>Rich experience in creating logo designs for small to medium businesses. Moderate knowledge and
+                        experience in developing visual identities.</p>
+                </div>
 
-            <div class="skill-pe">
-                <img src="images/illustrations/photo-editing.svg" alt="Photo Editing" height="289px">
-                <h3>Photo Editing</h3>
-                <p>Medium experience in photo editing and different kinds of photography. Strong knowledge of using
-                    photo editing software like Photoshop and Lightroom.</p>
+                <div class="card">
+                    <div class="card-illu illu-wd"></div>
+                    <h3 class="font-primary-bold">Web Design</h3>
+                    <p>Good understanding of UI/UX principles for web and mobile applications. Good foundation of
+                        front-end
+                        technologies that are currently used in the industry.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-illu illu-pe"></div>
+                    <h3 class="font-primary-bold">Photo Editing</h3>
+                    <p>Medium experience in photo editing and different kinds of photography. Strong knowledge of using
+                        photo editing software like Photoshop and Lightroom.</p>
+                </div>
             </div>
         </section>
 
-        <section>
-            <article>
-                <h2>About me</h2>
-                <p>My name is Laurentiu Pal and I am currently based in Iasi, RO.<br>
-                    I consider myself as an organized, honest person, oriented towards quality and time efficiency.<br>
-                    Although I don’t have any proven experience as an in-house web developer or graphic designer, I am
-                    willing to give my best to face new challenges and evolve professionally in one of following areas:
-                    Front-End Development, UI/UX Design or similar related fields.</p>
+        <section class="width-limit-second">
+            <article class="about">
+                <h2 class="font-primary-bold">About me
+                    <hr>
+                </h2>
+                <p>My name is Laurentiu Pal and I am currently based in Iasi, RO.</p>
+                <p>I consider myself as an organized, honest person, oriented towards quality and time efficiency.</p>
+                <p>Although I don't have any proven experience as an in-house web developer or graphic designer, I am
+                    constantly learning and practicing in my free time in order to develop a skill worth paying for. Currently, I
+                    would like to evolve professionally in one of following areas:
+                    Front-End Development, UI/UX Design or similar related domains.</p>
             </article>
 
-            <article>
-                <h2>Education Background</h2>
-                <p>2018 - 2020 / MASTER STUDENT</p>
-                <h3>Non-Polluting Techniques in Agrifood Industry</h3>
-                <p>@Faculty of Mechanics, Tech. Univ. “Gh. Asachi”, Iasi, RO</p>
+            <section class="resume-info">
+                <article class="education">
+                    <div>
+                        <h2 class="font-primary-bold">Education background
+                            <hr>
+                        </h2>
+                        <p>2018 - 2020 / MASTER STUDENT</p>
+                        <h3 class="font-primary">Non-Polluting Techniques in Agrifood Industry</h3>
+                        <p>@FACULTY OF MECHANICS, TECH. UNIV. “GH. ASACHI”, IASI, RO</p>
+                    </div>
 
-                <p>2014 - 2018 / BACHELOR'S DEGREE</p>
-                <h3>Mechanical Engineering</h3>
-                <p>@Faculty of Mechanics, Tech. Univ. “Gh. Asachi”, Iasi, RO</p>
-            </article>
+                    <div>
+                        <p>2014 - 2018 / BACHELOR'S DEGREE</p>
+                        <h3 class="font-primary">Mechanical Engineering</h3>
+                        <p>@FACULTY OF MECHANICS, TECH. UNIV. “GH. ASACHI”, IASI, RO</p>
+                    </div>
+                </article>
 
-            <article>
-                <h2>Work experience</h2>
-                <p>2018 - PRESENT</p>
-                <h3>Technical Documentation Engineer</h3>
-                <p>@Sonovision Romania, Iasi, RO (full time, onsite)</p>
+                <article class="work">
+                    <div>
+                        <h2 class="font-primary-bold">Work experience
+                            <hr>
+                        </h2>
+                        <p>2018 - PRESENT</p>
+                        <h3 class="font-primary">Technical Documentation Engineer</h3>
+                        <p>@SONOVISION, IASI, RO (full time - onsite)</p>
+                    </div>
 
-                <p>2013 - PRESENT</p>
-                <h3>Graphic Designer</h3>
-                <p>Freelancer (remote)</p>
-            </article>
+                    <div>
+                        <p>2013 - PRESENT</p>
+                        <h3 class="font-primary">Graphic Designer</h3>
+                        <p>FREELANCER (remote)</p>
+                    </div>
+                </article>
+            </section>
         </section>
     </main>
 
-    <!-- add FOOTER with js -->
+    <!-- FOOTER -->
+    <div class="footer width-limit">
+        <div>
+            <h3>Organized. Team player. Flexible.</h3>
+            <button>HIRE ME</button>
+        </div>
+
+        <div>
+            <img src="images/icons/icon-linkedin.svg" alt="LinkedIn Profile" height="39px">
+            <img src="images/icons/icon-github.svg" alt="Github Profile" height="39px">
+            <img src="images/icons/icon-behance.svg" alt="Behance Profile" height="39px">
+            <p>&copy;2023, LAURENTIU PAL</p>
+        </div>
+    </div>
 </body>
 
 </html>

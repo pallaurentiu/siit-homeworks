@@ -1,4 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.width-limit {
+    max-width: 1440px;
+    padding: 0px 30px;
+    margin: auto;
+}
+
+.width-limit-second {
+    max-width: 1196px;
+    padding: 0px 30px;
+    margin: auto;
+}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+h2 {
+    padding: 60px 0;
+    font-size: 72px;
+    line-height: 60px;
+}
+
+h3 {
+    padding: 10px 0;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 18px;
+    color: #555555;
+    text-align: justify;
+}
+
+hr {
+    margin-top: 20px;
+    border: 6px solid #E63946;
+    width: 80px;
+}
+
+::selection {
+    color: #ffffff;
+    background: #E63946;
 }
