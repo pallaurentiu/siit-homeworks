@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* ---------- NAVBAR ---------- */
 .navbar {
     max-width: 1440px;
     margin: auto;
@@ -25,7 +25,7 @@
     margin-left: 20px;
 }
 
-/* HEADER */
+/* ---------- HEADER ---------- */
 .header {
     display: flex;
     align-items: center;
@@ -35,8 +35,12 @@
     height: 640px;
 }
 
-.header > * {
+.header>* {
     max-width: 800px;
+}
+
+.welcome-mobile {
+    display: none;
 }
 
 h1 {
@@ -50,7 +54,7 @@ h1>span {
 }
 
 button {
-    background-color:#E63946;
+    background-color: #E63946;
     color: #ffffff;
     border: none;
 }
@@ -67,7 +71,7 @@ button a {
     font-size: 22px;
 }
 
-/* MAIN */
+/* ---------- MAIN ---------- */
 .skills {
     background-color: #E0E3E4;
 }
@@ -134,7 +138,7 @@ button a {
 }
 
 
-/* FOOTER */
+/* ---------- FOOTER ---------- */
 footer {
     margin-top: 100px;
     padding: 80px 0;

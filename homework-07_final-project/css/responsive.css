@@ -6,6 +6,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body > .navbar {
+        padding: 20px 0px;
+    }
+
     .navbar img {
         padding-left: 20px;
     }
@@ -16,19 +20,32 @@
 
     .burger-menu {
         display: inline-block;
+        margin-right: 20px;
+    }
+
+    body > .header {
+        background-position: top;
+        align-items: flex-end;
+        height: 400px;
+    }
+
+    .header > * {
+        display: none;
+    }
+
+    body > .welcome-mobile {
+        display: block;
+        margin: 40px 20px;
+        text-align: center;
+    }
+
+    .welcome-mobile h1 {
+        font-size: 46px;
+        line-height: 46px;
     }
 
     .cards {
         flex-direction: column;
-    }
-
-    .header {
-        background-position: top;
-    }
-
-    .header h1 {
-        font-size: 46px;
-        line-height: 46px;
     }
 
     .resume-info {
