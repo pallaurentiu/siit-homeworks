@@ -39,6 +39,51 @@
         text-align: center;
     }
 
+    .welcome-mobile > .floating-icon-ai {
+        position: absolute;
+        left: -4%;
+        top: 50%;
+        width: 40%;
+    }
+
+    .welcome-mobile > .floating-icon-ps {
+        position: absolute;
+        left: 60%;
+        top: 8%;
+        width: 40%;
+        z-index: -1;
+    }
+
+    .welcome-mobile > .floating-icon-html {
+        position: absolute;
+        left: 65%;
+        top: 48%;
+        width: 35%;
+    }
+
+    .welcome-mobile > .floating-icon-figma {
+        position: absolute;
+        left: 2%;
+        top: 10%;
+        width: 40%;
+    }
+
+    .welcome-mobile > .floating-icon-js {
+        position: absolute;
+        left: 15%;
+        top: 30%;
+        width: 35%;
+        z-index: -1;
+    }
+
+    .welcome-mobile > .floating-icon-css {
+        position: absolute;
+        left: 58%;
+        top: 36%;
+        width: 35%;
+        z-index: -1;
+    }
+
     .welcome-mobile h1 {
         font-size: 46px;
         line-height: 46px;

@@ -43,6 +43,44 @@
     display: none;
 }
 
+.floating-icon-ai {
+    position: absolute;
+    left: 50%;
+    top: 58%;
+}
+
+.floating-icon-ps {
+    position: absolute;
+    left: 73%;
+    top: 24%;
+}
+
+.floating-icon-html {
+    position: absolute;
+    left: 74%;
+    top: 66%;
+}
+
+.floating-icon-figma {
+    position: absolute;
+    left: 48%;
+    top: 18%;
+}
+
+.floating-icon-js {
+    position: absolute;
+    left: 56%;
+    top: 41%;
+    z-index: -1;
+}
+
+.floating-icon-css {
+    position: absolute;
+    left: 69%;
+    top: 48%;
+    z-index: -1;
+}
+
 h1 {
     font-size: 76px;
     line-height: 74px;
@@ -71,6 +109,10 @@ button a {
     font-size: 22px;
 }
 
+button:hover {
+    background-color: #c42f3c;
+}
+
 /* ---------- MAIN ---------- */
 .skills {
     background-color: #E0E3E4;
@@ -94,9 +136,9 @@ button a {
     box-shadow: 0px 100px 100px -60px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
+/* .card:hover {
     color: #E63946;
-}
+} */
 
 .card-illu {
     margin-bottom: 20px;
