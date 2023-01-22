@@ -148,4 +148,36 @@
     }
 
     /* PORTFOLIO */
+
+    body > .gallery {
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        margin-top: 50px;
+    }
+
+    .gallery > .pi-responsive {
+        height: 375px;
+    }
+
+    .overlay {
+        position: relative;
+        height: 375px;
+        transition: opacity 0.1s ease-in-out;
+        opacity: 0;
+    }
+    
+    .overlay-effect:hover .overlay {
+        opacity: 1;
+    }
+
 }

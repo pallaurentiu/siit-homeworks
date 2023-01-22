@@ -72,13 +72,17 @@ section>p {
     color: #ffffff;
 }
 
+.pi-responsive {
+    height: 640px;
+}
+
 .portfolio-item1 {
     grid-area: item1;
     background-image: url(../images/thumbnails/thumbnail-rpsgame.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item2 {
@@ -86,8 +90,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-card-responsive.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item3 {
@@ -95,8 +99,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-grid-website.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item4 {
@@ -104,8 +108,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-contact-form.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item5 {
@@ -113,8 +117,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-qrcode.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item6 {
@@ -122,8 +126,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-cherishevents.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item7 {
@@ -131,8 +135,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-chubbybubbletea.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item8 {
@@ -140,8 +144,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-diamond-collection.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 .portfolio-item9 {
@@ -149,8 +153,8 @@ section>p {
     background-image: url(../images/thumbnails/thumbnail-autoh.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-sizing: border-box;
-    height: 640px;
 }
 
 
