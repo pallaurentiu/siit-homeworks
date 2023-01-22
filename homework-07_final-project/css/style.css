@@ -49,6 +49,24 @@ h1>span {
     font-size: 40px;
 }
 
+button {
+    background-color:#E63946;
+    color: #ffffff;
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-download {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 22px;
+}
+
 /* MAIN */
 .skills {
     background-color: #E0E3E4;
@@ -126,4 +144,19 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+}
+
+.btn-hire {
+    padding: 16px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-media img {
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
