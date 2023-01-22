@@ -43,6 +43,7 @@ hr {
     margin-top: 20px;
     border: 6px solid #E63946;
     width: 80px;
+    border-radius: 6px;
 }
 
 ::selection {

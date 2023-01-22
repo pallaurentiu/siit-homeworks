@@ -28,8 +28,15 @@
 /* HEADER */
 .header {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    background: url(../images/profile-laur.png) no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 640px;
+}
+
+.header > * {
+    max-width: 800px;
 }
 
 h1 {
@@ -40,10 +47,6 @@ h1 {
 h1>span {
     font-weight: 100;
     font-size: 40px;
-}
-
-.photo {
-    height: 640px;
 }
 
 /* MAIN */
@@ -95,6 +98,7 @@ h1>span {
 
 .card h3 {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .about p {
@@ -111,13 +115,6 @@ h1>span {
     padding: 20px 0;
 }
 
-.education {
-    margin-right: 80px;
-}
-
-.work {
-    margin-left: 80px;
-}
 
 /* FOOTER */
 footer {
