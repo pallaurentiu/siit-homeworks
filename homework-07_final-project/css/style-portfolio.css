@@ -1,0 +1,196 @@
+/* ---------- NAVBAR ---------- */
+.navbar {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0px;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0px 20px;
+}
+
+li:hover a {
+    color: #E63946;
+    transition: 0.4s ease-in-out;
+}
+
+.darkmode {
+    margin-left: 20px;
+}
+
+/* ---------- MAIN ---------- */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section>p {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas:
+        "item1 item2 item3"
+        "item4 item5 item6"
+        "item7 item8 item9";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-top: 50px;
+}
+
+.overlay {
+    position: relative;
+    height: inherit;
+    background-color: #E63946;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.overlay-effect:hover .overlay {
+    opacity: 1;
+}
+
+.project-title {
+    position: relative;
+    top: 50%;
+    left: 50;
+    text-align: center;
+    color: #ffffff;
+}
+
+.portfolio-item1 {
+    grid-area: item1;
+    background-image: url(../images/thumbnails/thumbnail-rpsgame.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item2 {
+    grid-area: item2;
+    background-image: url(../images/thumbnails/thumbnail-card-responsive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item3 {
+    grid-area: item3;
+    background-image: url(../images/thumbnails/thumbnail-grid-website.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item4 {
+    grid-area: item4;
+    background-image: url(../images/thumbnails/thumbnail-contact-form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item5 {
+    grid-area: item5;
+    background-image: url(../images/thumbnails/thumbnail-qrcode.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item6 {
+    grid-area: item6;
+    background-image: url(../images/thumbnails/thumbnail-cherishevents.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item7 {
+    grid-area: item7;
+    background-image: url(../images/thumbnails/thumbnail-chubbybubbletea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item8 {
+    grid-area: item8;
+    background-image: url(../images/thumbnails/thumbnail-diamond-collection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+.portfolio-item9 {
+    grid-area: item9;
+    background-image: url(../images/thumbnails/thumbnail-autoh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 640px;
+}
+
+
+/* ---------- FOOTER ---------- */
+footer {
+    padding: 80px 0;
+    background-color: #E0E3E4;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-hire {
+    padding: 16px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-media img {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #E63946;
+    color: #ffffff;
+    border: none;
+}
+
+button:hover {
+    background-color: #c42f3c;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}

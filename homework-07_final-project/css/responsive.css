@@ -6,6 +6,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+    /* HOMEPAGE */
     body > .navbar {
         padding: 20px 0px;
     }
@@ -145,4 +146,6 @@
         margin-right: 20px;
         text-align: center;
     }
+
+    /* PORTFOLIO */
 }

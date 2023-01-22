@@ -21,6 +21,11 @@
     padding: 0px 20px;
 }
 
+li:hover a {
+    color: #E63946;
+    transition: 0.4s ease-in-out;
+}
+
 .darkmode {
     margin-left: 20px;
 }
@@ -135,10 +140,6 @@ button:hover {
     border-radius: 50px;
     box-shadow: 0px 100px 100px -60px rgba(0, 0, 0, 0.2);
 }
-
-/* .card:hover {
-    color: #E63946;
-} */
 
 .card-illu {
     margin-bottom: 20px;
