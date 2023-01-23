@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/typeface.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style-homepage.css">
+
 </head>
 
 <body>
@@ -20,15 +21,28 @@
         <a href="homepage.html"><img src="images/logos/logo-laurentiu-pal.svg" alt="Logo Laur" height="50px"></a>
 
         <ul class="menu">
-            <li><a href="homepage.html" class="font-primary-bold">home</a></li>
-            <li><a href="portfolio.html" class="font-primary-bold">portfolio</a></li>
-            <li><a href="contact.html" class="font-primary-bold">contact</a></li>
-            <li><img src="images/icons/icon-moon.svg" alt="Dark Mode" class="darkmode"></li>
+            <li class="nav-item"><a href="homepage.html" class="nav-link font-primary-bold">home</a></li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link font-primary-bold">portfolio</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link font-primary-bold">contact</a></li>
+            <li class="nav-item"><img src="images/icons/icon-moon.svg" alt="Dark Mode" class="darkmode"></li>
         </ul>
 
-        <div class="burger-menu"></div>
-    </nav>
+        <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
 
+        <script>
+            const burgerMenu = document.querySelector('.burger-menu');
+            const menu = document.querySelector('.menu');
+
+            burgerMenu.addEventListener("click", () => {
+                burgerMenu.classList.toggle("active");
+                menu.classList.toggle("active");
+            })
+        </script>
+    </nav>
 
     <!-- ---------- HEADER ---------- -->
 
@@ -111,10 +125,10 @@
                     <span class="chip">HTML</span>
                     <span class="chip">CSS</span>
                     <span class="chip">Javascript</span>
-                    <span class="chip">Adobe Illustrator</span>
-                    <span class="chip">Adobe Photoshop</span>
+                    <span class="chip">Illustrator</span>
+                    <span class="chip">Photoshop</span>
                     <span class="chip">Figma</span>
-                    <span class="chip">Adobe Lightroom</span>
+                    <span class="chip">Lightroom</span>
                     <span class="chip">Wordpress</span>
                 </p>
             </article>
