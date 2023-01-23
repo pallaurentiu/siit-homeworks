@@ -23,7 +23,7 @@
 
 li:hover a {
     color: #E63946;
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .darkmode {
@@ -54,7 +54,7 @@ section>p {
 
 .overlay {
     position: relative;
-    height: inherit;
+    height: 100%;
     background-color: #E63946;
     transition: opacity 0.4s ease-in-out;
     opacity: 0;
@@ -65,10 +65,10 @@ section>p {
 }
 
 .project-title {
-    position: relative;
-    top: 50%;
-    left: 50;
-    text-align: center;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
 }
 
@@ -82,7 +82,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item2 {
@@ -91,7 +90,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item3 {
@@ -100,7 +98,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item4 {
@@ -109,7 +106,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item5 {
@@ -118,7 +114,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item6 {
@@ -127,7 +122,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item7 {
@@ -136,7 +130,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item8 {
@@ -145,7 +138,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 .portfolio-item9 {
@@ -154,7 +146,6 @@ section>p {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 

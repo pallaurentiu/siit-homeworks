@@ -171,7 +171,7 @@
 
     .overlay {
         position: relative;
-        height: 375px;
+        height: inherit;
         transition: opacity 0.1s ease-in-out;
         opacity: 0;
     }
@@ -180,4 +180,17 @@
         opacity: 1;
     }
 
+    /* CONTACT */
+
+    .fullname {
+        flex-direction: column;
+    }
+
+    .fullname > .fname {
+        padding-right: 0px;
+    }
+
+    .fullname > .lname {
+        padding-left: 0px;
+    }
 }

@@ -39,11 +39,29 @@ p {
     text-align: justify;
 }
 
-hr {
+.redline {
     margin-top: 20px;
     border: 6px solid #E63946;
     width: 80px;
     border-radius: 6px;
+}
+
+.dashedline {
+    margin: 30px auto;
+    border: none;
+    border-top: 2px dashed #E0E3E4;
+}
+
+.chip {
+    padding: 16px;
+    font-size: 22px;
+    background-color: #E0E3E4;
+    border-radius: 28px;
+    line-height: 72px;
+}
+
+.chip:hover {
+    background-color: #d8d8d8;
 }
 
 ::selection {
