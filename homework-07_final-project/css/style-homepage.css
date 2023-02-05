@@ -45,6 +45,10 @@ li:hover a {
 }
 
 /* ---------- HEADER ---------- */
+.personal-logo:hover {
+    opacity: 0.8;
+}
+
 .header {
     display: flex;
     align-items: center;
