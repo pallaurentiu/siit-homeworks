@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/typeface.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style-contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <li class="nav-item"><a href="homepage.html" class="nav-link font-primary-bold">home</a></li>
             <li class="nav-item"><a href="portfolio.html" class="nav-link font-primary-bold">portfolio</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link font-primary-bold">contact</a></li>
-            <li class="nav-item"><img src="images/icons/icon-moon.svg" alt="Dark Mode" class="darkmode"></li>
+            <li class="nav-item"><i class="bi bi-brightness-high" id="darkmode"></i></li>
         </ul>
 
         <div class="burger-menu">
@@ -39,7 +40,76 @@
             burgerMenu.addEventListener("click", () => {
                 burgerMenu.classList.toggle("active");
                 menu.classList.toggle("active");
-            })
+            });
+
+            const darkModeIcon = document.getElementById('darkmode');
+            const body = document.querySelector('body');
+            const logo = document.querySelector('img');
+
+            darkModeIcon.addEventListener('click', function(){
+                this.classList.toggle('bi-moon');
+                if (this.classList.toggle('bi-brightness-high')) {
+                    body.style.background = 'white';
+                    body.style.color = 'black';
+                    body.style.transition = '1s';
+                    logo.src = 'images/logos/logo-laurentiu-pal.svg';
+                    document.getElementById('footer-dark').style.background = '#E0E3E4';
+                    document.getElementById('dark-fname').style.background = '#ffffff';
+                    document.getElementById('dark-fname').style.color = '#000000';
+                    document.getElementById('dark-fname').style.outlineColor = '#aaaaaa';
+                    document.getElementById('dark-fname').style.border = '2px solid #DFDFDF';
+
+                    document.getElementById('dark-lname').style.background = '#ffffff';
+                    document.getElementById('dark-lname').style.color = '#000000';
+                    document.getElementById('dark-lname').style.outlineColor = '#aaaaaa';
+                    document.getElementById('dark-lname').style.border = '2px solid #DFDFDF';
+
+                    document.getElementById('dark-email').style.background = '#ffffff';
+                    document.getElementById('dark-email').style.color = '#000000';
+                    document.getElementById('dark-email').style.outlineColor = '#aaaaaa';
+                    document.getElementById('dark-email').style.border = '2px solid #DFDFDF';
+
+                    document.getElementById('dark-title').style.background = '#ffffff';
+                    document.getElementById('dark-title').style.color = '#000000';
+                    document.getElementById('dark-title').style.outlineColor = '#aaaaaa';
+                    document.getElementById('dark-title').style.border = '2px solid #DFDFDF';
+
+                    document.getElementById('dark-msg').style.background = '#ffffff';
+                    document.getElementById('dark-msg').style.color = '#000000';
+                    document.getElementById('dark-msg').style.outlineColor = '#aaaaaa';
+                    document.getElementById('dark-msg').style.border = '2px solid #DFDFDF';
+                } else {
+                    body.style.background = 'black';
+                    body.style.color = 'white';
+                    body.style.transition = '1s';
+                    logo.src = 'images/logos/logo-laurentiu-pal-white.svg';
+                    document.getElementById('footer-dark').style.background = '#1b1b1b';
+                    document.getElementById('dark-fname').style.background = '#1b1b1b';
+                    document.getElementById('dark-fname').style.color = '#ffffff';
+                    document.getElementById('dark-fname').style.outlineColor = '#1b1b1b';
+                    document.getElementById('dark-fname').style.border = '2px solid #272727';
+
+                    document.getElementById('dark-lname').style.background = '#1b1b1b';
+                    document.getElementById('dark-lname').style.color = '#ffffff';
+                    document.getElementById('dark-lname').style.outlineColor = '#1b1b1b';
+                    document.getElementById('dark-lname').style.border = '2px solid #272727';
+
+                    document.getElementById('dark-email').style.background = '#1b1b1b';
+                    document.getElementById('dark-email').style.color = '#ffffff';
+                    document.getElementById('dark-email').style.outlineColor = '#1b1b1b';
+                    document.getElementById('dark-email').style.border = '2px solid #272727';
+
+                    document.getElementById('dark-title').style.background = '#1b1b1b';
+                    document.getElementById('dark-title').style.color = '#ffffff';
+                    document.getElementById('dark-title').style.outlineColor = '#1b1b1b';
+                    document.getElementById('dark-title').style.border = '2px solid #272727';
+
+                    document.getElementById('dark-msg').style.background = '#1b1b1b';
+                    document.getElementById('dark-msg').style.color = '#ffffff';
+                    document.getElementById('dark-msg').style.outlineColor = '#1b1b1b';
+                    document.getElementById('dark-msg').style.border = '2px solid #272727';
+                }
+            });
         </script>
     </nav>
 
@@ -57,28 +127,28 @@
         <div class="fullname">
             <div class="fname">
                 <label for="first-name" class="font-primary-bold">First Name</label><br>
-                <input type="text" name="First Name" class="name" required></input><br>
+                <input type="text" name="First Name" class="name" id="dark-fname" required></input><br>
             </div>
 
             <div class="lname">
                 <label for="last-name" class="font-primary-bold">Last Name</label><br>
-                <input type="text" name="Last Name" class="name"></input>
+                <input type="text" name="Last Name" class="name" id="dark-lname"></input>
             </div>
         </div>
 
         <div>
             <label for="e-mail" class="font-primary-bold">Email</label><br>
-            <input type="email" name="Email Address" required></input>
+            <input type="email" name="Email Address" id="dark-email" required></input>
         </div>
 
         <div>
             <label for="subject" class="font-primary-bold">Subject</label><br>
-            <input type="text" name="Subject" required></input>
+            <input type="text" name="Subject" id="dark-title" required></input>
         </div>
 
         <div>
             <label for="message" class="font-primary-bold">Write your message</label><br>
-            <textarea type="text" name="Message" required></textarea>
+            <textarea type="text" name="Message" id="dark-msg" required></textarea>
         </div>
 
         <div>
@@ -88,7 +158,7 @@
 
 
     <!-- ---------- FOOTER ---------- -->
-    <footer>
+    <footer id="footer-dark">
         <section class="footer width-limit">
             <div class="short-cta">
                 <h3 class="font-primary-bold">Organized. Team player.<br>Flexible.</h3>

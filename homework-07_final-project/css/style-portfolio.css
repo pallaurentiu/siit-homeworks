@@ -44,6 +44,11 @@ li:hover a {
     background-color: black;
 }
 
+i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* ---------- MAIN ---------- */
 a {
     text-decoration: none;

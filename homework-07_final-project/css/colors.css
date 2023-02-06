@@ -8,11 +8,9 @@
 }
 
 .bg-color-accent {
-    color: #E63946;
+    background-color: #E63946;
 }
 
 .bg-color-neutral {
-    color: #E0E3E4;
+    background-color: #E0E3E4;
 }
-
-/* DARK MODE COLORS */

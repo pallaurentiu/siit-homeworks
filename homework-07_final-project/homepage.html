@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/typeface.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style-homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <li class="nav-item"><a href="homepage.html" class="nav-link font-primary-bold">home</a></li>
             <li class="nav-item"><a href="portfolio.html" class="nav-link font-primary-bold">portfolio</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link font-primary-bold">contact</a></li>
-            <li class="nav-item"><img src="images/icons/icon-moon.svg" alt="Dark Mode" class="darkmode"></li>
+            <li class="nav-item"><i class="bi bi-brightness-high" id="darkmode"></i></li>
         </ul>
 
         <div class="burger-menu">
@@ -39,7 +40,54 @@
             burgerMenu.addEventListener("click", () => {
                 burgerMenu.classList.toggle("active");
                 menu.classList.toggle("active");
-            })
+            });
+
+            const darkModeIcon = document.getElementById('darkmode');
+            const body = document.querySelector('body');
+            const logo = document.querySelector('img');
+
+            darkModeIcon.addEventListener('click', function(){
+                this.classList.toggle('bi-moon');
+                if (this.classList.toggle('bi-brightness-high')) {
+                    body.style.background = 'white';
+                    body.style.color = 'black';
+                    body.style.transition = '1s';
+                    logo.src = 'images/logos/logo-laurentiu-pal.svg';
+                    document.getElementById('footer-dark').style.background = '#E0E3E4';
+                    document.getElementById('skills-dark').style.background = '#E0E3E4';
+                    document.getElementById('card1').style.background = '#ffffff';
+                    document.getElementById('card2').style.background = '#ffffff';
+                    document.getElementById('card3').style.background = '#ffffff';
+                    document.getElementById('chip1').style.background = '#E0E3E4';
+                    document.getElementById('chip2').style.background = '#E0E3E4';
+                    document.getElementById('chip3').style.background = '#E0E3E4';
+                    document.getElementById('chip4').style.background = '#E0E3E4';
+                    document.getElementById('chip5').style.background = '#E0E3E4';
+                    document.getElementById('chip6').style.background = '#E0E3E4';
+                    document.getElementById('chip7').style.background = '#E0E3E4';
+                    document.getElementById('chip8').style.background = '#E0E3E4';
+                    document.getElementById('dashline').style.color = '#E0E3E4';
+                } else {
+                    body.style.background = 'black';
+                    body.style.color = 'white';
+                    body.style.transition = '1s';
+                    logo.src = 'images/logos/logo-laurentiu-pal-white.svg';
+                    document.getElementById('footer-dark').style.background = '#1b1b1b';
+                    document.getElementById('skills-dark').style.background = '#1b1b1b';
+                    document.getElementById('card1').style.background = '#272727';
+                    document.getElementById('card2').style.background = '#272727';
+                    document.getElementById('card3').style.background = '#272727';
+                    document.getElementById('chip1').style.background = '#1b1b1b';
+                    document.getElementById('chip2').style.background = '#1b1b1b';
+                    document.getElementById('chip3').style.background = '#1b1b1b';
+                    document.getElementById('chip4').style.background = '#1b1b1b';
+                    document.getElementById('chip5').style.background = '#1b1b1b';
+                    document.getElementById('chip6').style.background = '#1b1b1b';
+                    document.getElementById('chip7').style.background = '#1b1b1b';
+                    document.getElementById('chip8').style.background = '#1b1b1b';
+                    document.getElementById('dashline').style.borderTop = '2px dashed #1b1b1b';
+                }
+            });
         </script>
     </nav>
 
@@ -77,18 +125,18 @@
 
     <!-- ---------- MAIN ---------- -->
     <main>
-        <section class="skills">
+        <section class="skills" id="skills-dark">
             <h2 class="font-primary-bold">Skills</h2>
 
             <div class="cards width-limit">
-                <div class="card">
+                <div class="card" id="card1">
                     <div class="card-illu illu-gd"></div>
                     <h3 class="font-primary-bold">Graphic Design</h3>
                     <p>Rich experience in creating logo designs for small to medium businesses. Moderate knowledge and
                         experience in developing visual identities.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="card2">
                     <div class="card-illu illu-wd"></div>
                     <h3 class="font-primary-bold">Web Design</h3>
                     <p>Good understanding of UI/UX principles for web and mobile applications. Good foundation of
@@ -96,7 +144,7 @@
                         technologies that are currently used in the industry.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="card3">
                     <div class="card-illu illu-pe"></div>
                     <h3 class="font-primary-bold">Photo Editing</h3>
                     <p>Medium experience in photo editing and different kinds of photography. Strong knowledge of using
@@ -118,17 +166,17 @@
                 <p>Currently, I would like to evolve professionally in one of following fields: Front-End
                     Development, UI/UX Design or other similar related domains.</p>
 
-                <hr class="dashedline">
+                <hr class="dashedline" id="dashline">
                 <h3 class="font-primary">Software knowledge</h3>
                 <p>
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">Javascript</span>
-                    <span class="chip">Illustrator</span>
-                    <span class="chip">Photoshop</span>
-                    <span class="chip">Figma</span>
-                    <span class="chip">Lightroom</span>
-                    <span class="chip">Wordpress</span>
+                    <span class="chip" id="chip1">HTML</span>
+                    <span class="chip" id="chip2">CSS</span>
+                    <span class="chip" id="chip3">Javascript</span>
+                    <span class="chip" id="chip4">Illustrator</span>
+                    <span class="chip" id="chip5">Photoshop</span>
+                    <span class="chip" id="chip6">Figma</span>
+                    <span class="chip" id="chip7">Lightroom</span>
+                    <span class="chip" id="chip8">Wordpress</span>
                 </p>
             </article>
 
@@ -179,7 +227,7 @@
     </main>
 
     <!-- ---------- FOOTER ---------- -->
-    <footer>
+    <footer id="footer-dark">
         <section class="footer width-limit">
             <div class="short-cta">
                 <h3 class="font-primary-bold">Organized. Team player.<br>Flexible.</h3>
